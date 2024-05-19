@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %} care-portal {% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">AGENCY PORTAL</h5>
+                <p class="card-text mb-3 mt-3"></p>
+                <a href="/agency_login" class="btn btn-primary">Agency Dashboard</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">STAFF PORTAL</h5>
+                <p class="card-text mb-3 mt-3"></p>
+                <a href="/staff_login" class="btn btn-danger">Staff Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

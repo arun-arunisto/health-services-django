@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% block title %} Agency Login {% endblock %}
+{% block head %}
+<link rel="stylesheet" href="../static/style.css">
+{% endblock %}
+{% block content %}
+<div class="card text-bg-primary mb-3 client-login">
+    <div class="card-title mb-3 mt-3 form-style">
+        <h3>Agency Login</h3>
+        <form class="mb-3 mt-3" method="post">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="mb-3 form-checkbox">
+                <input type="checkbox" value="" id="dlexCheckDefault"> Remember Me
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-secondary">Login Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
